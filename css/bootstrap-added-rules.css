@@ -1,0 +1,64 @@
+.btn-inverse {
+  color: #fff;
+  border-color: #555;
+  background-color: #333;
+}
+
+.btn-inverse:focus,
+.btn-inverse.focus {
+  color: #fff;
+  border-color: #959595;
+  background-color: #4c4c4c;
+}
+
+.btn-inverse:hover {
+  color: #fff;
+  border-color: #747474;
+  background-color: #4c4c4c;
+}
+
+.btn-inverse:active,
+.btn-inverse.active,
+.open > .dropdown-toggle.btn-inverse {
+  color: #fff;
+  border-color: #747474;
+  background-color: #4c4c4c;
+}
+
+.btn-inverse:active:hover,
+.btn-inverse.active:hover,
+.open > .dropdown-toggle.btn-inverse:hover,
+.btn-inverse:active:focus,
+.btn-inverse.active:focus,
+.open > .dropdown-toggle.btn-inverse:focus,
+.btn-inverse:active.focus,
+.btn-inverse.active.focus,
+.open > .dropdown-toggle.btn-inverse.focus {
+  color: #fff;
+  border-color: #959595;
+  background-color: #5e5e5e;
+}
+
+.btn-inverse:active,
+.btn-inverse.active,
+.open > .dropdown-toggle.btn-inverse {
+  background-image: none;
+}
+
+.btn-inverse.disabled:hover,
+.btn-inverse[disabled]:hover,
+fieldset[disabled] .btn-inverse:hover,
+.btn-inverse.disabled:focus,
+.btn-inverse[disabled]:focus,
+fieldset[disabled] .btn-inverse:focus,
+.btn-inverse.disabled.focus,
+.btn-inverse[disabled].focus,
+fieldset[disabled] .btn-inverse.focus {
+  border-color: #555;
+  background-color: #333;
+}
+
+.btn-inverse .badge {
+  color: #333;
+  background-color: #fff;
+}
