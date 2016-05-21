@@ -1,53 +1,411 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Unlimiworks.GitHub.io by UnlimiWorks</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <meta name="author" content="unlimiworks @Github">
+
+    <title>An introductory portfolio | unlimiworks</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link href="css/bootstrap-added-rules.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
   </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Anass Maddah's front-end portfolio</h1>
-      <h2 class="project-tagline">A collection of front-end projects via Github Pages</h2>
+
+  <body id="top">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header easing">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#page-navigation" aria-expanded="false">
+            <span class="sr-only">Toggle Navigations</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand outline" href="#top"><i class="fa fa-graduation-cap"></i> Unlimiworks</a>
+        </div>
+
+        <div id="page-navigation" class="collapse navbar-collapse" aria-expanded="false">
+          <ul class="nav navbar-nav navbar-right easing">
+            <li class="hidden"><a href="#top"></a></li>
+            <li class="outline"><a class="outline" href="#showcase">Showcase</a></li>
+            <li><a class="outline" href="#about">About</a></li>
+            <li><a class="outline" href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown">Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="outline" href="/random-quote-generator">Random Quote Generator</a></li>
+                <li><a class="outline" href="/local-weather">Weather App</a></li>
+                <li><a class="outline" href="/wikipedia-viewer/">Wikipedia Viewer</a></li>
+                <li class="divider"></li>
+                <li><a class="outline" href="/javascript-calculator/">Javascript Calculator</a></li>
+                <li><a class="outline" href="/pomodoro-timer/">Pomodoro Timer</a></li>
+                <li><a class="outline" href="/tic-tac-toe/">Tic Tac Toe</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="alert alert-info alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Oops !</strong> It seems I didn't find a picture of myself yet. Here's a kitten photo instead.
+          </div>
+          <div class="col-lg-12">
+            <img src="http://www.wallpapertycoon.com/wp-content/uploads/2016/03/Beauty_Stylish_Kitten-256x256.jpg" alt="Personal picture" class="img-circle img-responsive">
+            <div class="introduction">
+              <span class="name">Anass Maddah</span>
+              <hr class="hr hr-header">
+              <span class="description">An aspiring web / javascript developer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Showcase grid -->
+    <section id="showcase">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Showcase</h2>
+            <hr class="hr hr-showcase">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-xs-12 item">
+            <a class="item-link" href="#modal1" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-responsive" src="img\showcase\random quote generator.png" alt="random quote generator snapshot" title="Check me out !">
+            </a>
+          </div>
+          <div class="col-sm-4 col-xs-12 item">
+            <a class="item-link" href="#modal2" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-responsive" src="img\showcase\weather app.png" alt="local weather snapshot" title="Check me out !">
+            </a>
+          </div>
+          <div class="col-sm-4 col-xs-12 item">
+            <a class="item-link" href="#modal3" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-responsive" src="img\showcase\wikipedia viewer.png" alt="wikipedia viewer snapshot" title="Check me out !">
+            </a>
+          </div>
+          <div class="col-sm-4 col-xs-12 item">
+            <a class="item-link" href="#modal4" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-responsive" src="img\showcase\javascript calculator.png" alt="javascript calculator snapshot" title="Check me out !">
+            </a>
+          </div>
+          <div class="col-sm-4 col-xs-12 item">
+            <a class="item-link" href="#modal5" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-responsive" src="img\showcase\pomodoro timer.png" alt="pomodoro timer snapshot" title="Check me out !">
+            </a>
+          </div>
+          <div class="col-sm-4 col-xs-12 item">
+            <a class="item-link" href="#modal6" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-responsive" src="img\showcase\tic tac toe.png" alt="tic tac toe snapshot" title="Check me out !">
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-
-      <footer class="site-footer">
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>About</h2>
+            <hr class="hr hr-about">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 main">
+            <p>
+              I'm a programmer hailing from Rabat, Morocco. I discovered programming back in early 2011 while in university,
+              but I found myself more interested in the craft rather than the pure theory material
+              (probably driven by the amount of unrelated subjects spoon-fed as semester modules),
+              leading me to the heavily centered around javascript and web development self-learning path.
+            </p>
+          </div>
+          <div class="col-lg-4 col-lg-offset-2">
+            <p>
+              I'm an interactive person, a team player, and a person highly driven by achievements and community work.
+              I deeply care about, and look for ways to empower those in need of my skills.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <p>
+              A special shoutout to the <a class="outline" href="https://gitter.im/freecodecamp/freecodecamp"><strong>FreeCodeCamp community</strong></a>
+              who are one of the main reasons I'm still able to look further in the road and know I can get better
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-
-  
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="col-lg-12 text-center">
+          <h2>Contact</h2>
+          <hr class="hr hr-contact">
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-8 col-lg-offset-2">
+            <p class="message">Check me out on these mediums :</p>
+            <ul class="list-inline">
+              <li class="li">
+                <a class="btn btn-lg btn-lg-fixed outline btn-inverse" href="https://github.com/UnlimiWorks" title="Github"><i class="fa fa-lg fa-github"></i></a>
+              </li>
+              <li class="li">
+                <a class="btn btn-lg btn-lg-fixed outline btn-info" href="https://twitter.com/unlimiworks" title="Twitter"><i class="fa fa-lg fa-twitter"></i></a>
+              </li>
+              <li class="li">
+                <a class="btn btn-lg btn-lg-fixed outline btn-success" href="https://freecodecamp.com/UnlimiWorks" title="FreeCodeCamp"><i class="fa fa-lg fa-fire"></i></a>
+              </li>
+              <li class="li">
+                <a class="btn btn-lg btn-lg-fixed outline btn-default" href="https://codepen.io/UnlimiWorks" title="Codepen"><i class="fa fa-lg fa-codepen"></i></a>
+              </li>
+            </ul>
+            <p class="filler">...Or better yet</p>
+            <p class="message">You can contact me if you want to work on something together. I'm always happy to cooperate when I can !</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <!-- <div class="footer-top">
+        <div class="container">
+          <div class="row">
+          <div class="footer-col col-md-4">
+              <h3>to be filled with heading</h3>
+              <p>to be filled with paragraphs</p>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>to be filled with heading</h3>
+              <p>to be filled with paragraphs</p>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>to be filled with heading</h3>
+              <p>to be filled with paragraphs</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              Copyright &copy; unlimiworks 2016 - Hosted with <i class="pink fa fa-heart"></i> by Github Pages.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- scroll to top utility button for mobile devices -->
+    <div class="scroll-button page-scroll visible-xs visible-sm easing">
+      <a class="btn outline" href="#top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+    <!-- Showcase to be displayed -->
+    <div id="modal1" class="modal fade">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Random Quote Generator</h2>
+                <hr class="hr hr-showcase">
+                <a href="/random-quote-generator/">
+                  <img class="img-responsive img-centered" src="img/showcase/random quote generator.png" alt="random quote generator preview">
+                </a>
+                <p>A project fetching quotes from an API and displaying them</p>
+                <button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal2" class="modal fade">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Local Weather</h2>
+                <hr class="hr hr-showcase">
+                <a href="/local-weather/">
+                  <img class="img-responsive img-centered" src="img/showcase/weather app.png" alt="local weather preview">
+                </a>
+                <p>A project using open weather API to display the weather in the current location</p>
+                <button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal3" class="modal fade">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Wikipedia Viewer</h2>
+                <hr class="hr hr-showcase">
+                <a href="/wikipedia-viewer/">
+                  <img class="img-responsive img-centered" src="img/showcase/wikipedia viewer.png" alt="wikipedia viewer preview">
+                </a>
+                <p>A project using wikipedia's API to fetch articles, display essential infos and link to them</p>
+                <button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal4" class="modal fade">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Javascript Calculator</h2>
+                <hr class="hr hr-showcase">
+                <a href="/javascript-calculator/">
+                  <img class="img-responsive img-centered" src="img/showcase/javascript calculator.png" alt="javascript calculator preview">
+                </a>
+                <p>
+                  A calculator done with javascript, treating basic commands and handling incorrect expressions.
+                  No parser / recursive tree algorithm was used
+                </p>
+                <button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal5" class="modal fade">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Pomodoro Timer</h2>
+                <hr class="hr hr-showcase">
+                <a href="/pomodoro-timer/">
+                  <img class="img-responsive img-centered" src="img/showcase/pomodoro timer.png" alt="pomodoro timer preview">
+                </a>
+                <p>A simple Pomodoro-style timer with built-in alarm was built using javascript</p>
+                <button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal6" class="modal fade">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Tic Tac Toe</h2>
+                <hr class="hr hr-showcase">
+                <a href="/tic-tac-toe/">
+                  <img class="img-responsive img-centered" src="img/showcase/tic tac toe.png" alt="tic tac toe preview">
+                </a>
+                <p>
+                  A project displaying a simple 1 player tic tac toe game. No
+                  Mini-max algorithm or alpha-beta pruning was used, since the rules were simple.
+                  It could be implemented in future updates
+                </p>
+                <button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+
+  <!-- framework scripts -->
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <!-- js plugins -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
+  <script src="js/plugins/cbpAnimatedHeader.min.js"></script>
+
+  <!-- custom js -->
+  <script src="js/app.js"></script>
 </html>
